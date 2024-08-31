@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin sm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+// Variables :
+$dark: #282828;
+$darker: #181818;
+$backLight: #dae1d8;
+$darkAccent: #03a9f4;
+$lightAccent: #096dbe;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: ltr !important;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: $darkAccent;
+  color: $dark;
+}
+
+.pad {
+  padding: 2rem 10rem;
+  @include xl {
+    padding: 2rem 6rem;
+  }
+  @include lg {
+    padding: 1.5rem 4rem;
+  }
+  @include md {
+    padding: 1.5rem 4rem;
+  }
+  @include sm {
+    padding: 1rem 1rem;
+  }
+}
+
+.scrollTop {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  background-color: $darkAccent;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  bottom: -50px;
+  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.scrollTop.show {
+  bottom: 15px;
+  @include md {
+    bottom: 20px;
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #fff #fff transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent $darkAccent $darkAccent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #fff #fff transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.btn {
+  @apply p-2 md:px-2 md:py-1 text-white dark:text-dark capitalize bg-lightAccent dark:bg-darkAccent rounded-[5px] hover:bg-darkAccent dark:hover:bg-lightAccent transition-colors;
+}
+
+.text-size-1 {
+  @apply text-[64px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+}
+.text-size-2 {
+  @apply text-[32px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+}
+.text-size-3 {
+  @apply text-[28px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+}
+.text-size-4 {
+  @apply text-[22px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+}
+.text-size-5 {
+  @apply text-[16px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+}
+.text-size-6 {
+  @apply text-[12px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+}
+
+.heading {
+  @apply text-size-3 capitalize font-semibold;
+}
+
+.badge {
+  @apply text-size-6 px-1 py-[0.2rem] bg-white dark:bg-dark rounded-[3px] text-dark dark:text-white font-semibold;
+}
+
+@media screen and (max-width: 720px) {
+}
+@media screen and (max-width: 500px) {
+}
