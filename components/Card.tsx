@@ -42,7 +42,7 @@ export default function Card({
           >
             Visit
           </Link>
-          <p className="flex items-center bg-white dark:bg-dark p-1 rounded-[5px]">
+          <p className="flex items-center bg-white dark:bg-dark p-1 rounded-[5px] text-size-5">
             {history}
           </p>
         </div>

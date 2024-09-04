@@ -140,27 +140,27 @@ ul {
 }
 
 .text-size-1 {
-  @apply text-[64px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+  @apply text-[64px] xl:text-[58px] lg:text-[52px] md:text-[52px] sm:text-[52px];
 }
 
 .text-size-2 {
-  @apply text-[32px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+  @apply text-[38px] xl:text-[34px] lg:text-[30px] md:text-[28px] sm:text-[28px];
 }
 
 .text-size-3 {
-  @apply text-[28px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+  @apply text-[28px] xl:text-[] lg:text-[24px] md:text-[22px] sm:text-[22px];
 }
 
 .text-size-4 {
-  @apply text-[22px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+  @apply text-[22px] xl:text-[] lg:text-[20px] md:text-[18px] sm:text-[18px];
 }
 
 .text-size-5 {
-  @apply text-[16px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+  @apply text-[16px] xl:text-[] lg:text-[15px] md:text-[14px] sm:text-[12px];
 }
 
 .text-size-6 {
-  @apply text-[12px] xl:text-[] lg:text-[] md:text-[] sm:text-[];
+  @apply text-[12px] xl:text-[] lg:text-[11px] md:text-[11px] sm:text-[10px];
 }
 
 .heading {
@@ -169,4 +169,8 @@ ul {
 
 .badge {
   @apply text-size-6 px-1 py-[0.2rem] bg-white dark:bg-dark rounded-[3px] text-dark dark:text-white font-semibold;
+}
+
+.container {
+  @apply bg-bglight dark:bg-darker rounded-[16px] px-8 py-4 flex gap-4;
 }/*# sourceMappingURL=globals.css.map */

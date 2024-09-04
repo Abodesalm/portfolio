@@ -11,6 +11,8 @@ export function GET() {
         facebook: "https://www.facebook.com/3abod.sa/",
         github: "https://github.com/abodesalm",
         linkedin: "https://linkedin.com/in/3bod-sa  ",
+        email: "abodesalm45@gmail.com",
+        phone: "+963 997 203 291",
       },
     },
   });

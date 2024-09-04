@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { BiUpArrow } from "react-icons/bi";
+import { BiUpArrowAlt, BiUpArrowCircle } from "react-icons/bi";
 
 const ToUp = () => {
   const [clas, setClas] = useState("");
@@ -24,7 +25,7 @@ const ToUp = () => {
       }
       onClick={scrlTop}
     >
-      <BiUpArrow className="text-[20px] text-black" />
+      <BiUpArrowAlt className="text-[20px] text-black fixed" />
     </div>
   );
 };

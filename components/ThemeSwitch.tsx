@@ -1,7 +1,8 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { MdLightMode, MdDarkMode } from "react-icons/md";
+
+import { BiMoon, BiSun } from "react-icons/bi";
 
 export default function ThemeSwitch() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -13,12 +14,12 @@ export default function ThemeSwitch() {
     <div className="flex justify-center items-center">
       {mounted &&
         (currentTheme === "dark" ? (
-          <MdLightMode
+          <BiSun
             className=" cursor-pointer hover:text-accent text-[22px] "
             onClick={() => setTheme("light")}
           />
         ) : (
-          <MdDarkMode
+          <BiMoon
             className=" cursor-pointer hover:text-accent text-[22px] "
             onClick={() => setTheme("dark")}
           />
