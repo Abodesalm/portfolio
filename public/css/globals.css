@@ -172,5 +172,5 @@ ul {
 }
 
 .container {
-  @apply bg-bglight dark:bg-darker rounded-[16px] px-8 py-4 flex gap-4;
+  @apply bg-bglight/70 dark:bg-darker/70 rounded-[16px] px-8 py-4 flex gap-4 backdrop-blur-sm;
 }/*# sourceMappingURL=globals.css.map */

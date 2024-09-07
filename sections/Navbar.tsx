@@ -5,7 +5,7 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 
 export default function Navbar() {
   return (
-    <div className="pad py-[20px_!important] bg-bglight dark:bg-darker border-b border-dark dark:border-transparent text-lightAccent dark:text-darkAccent flex justify-between items-center select-none">
+    <nav className="pad bg-bglight/80 dark:bg-dark/5 py-[20px_!important] text-lightAccent dark:text-darkAccent flex justify-between items-center select-none">
       <div className="text-size-4 font-medium">3bod Sa</div>
       <div className="flex gap-10 sm:gap-6 items-center">
         <ThemeSwitch />
@@ -23,6 +23,6 @@ export default function Navbar() {
           <BsFillInfoCircleFill className="text-[19px]" />
         </Link>
       </div>
-    </div>
+    </nav>
   );
 }

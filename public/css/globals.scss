@@ -26,7 +26,7 @@
 // Variables :
 $dark: #282828;
 $darker: #181818;
-$backLight: #dae1d8;
+$backLight: #dedede;
 $darkAccent: #03a9f4;
 $lightAccent: #096dbe;
 
@@ -184,7 +184,7 @@ ul {
 }
 
 .container {
-  @apply bg-bglight dark:bg-darker rounded-[16px] px-8 py-4 flex gap-4;
+  @apply bg-bglight/70 dark:bg-darker/70 rounded-[16px] px-8 py-4 flex gap-4 backdrop-blur-sm;
 }
 
 @media screen and (max-width: 720px) {

@@ -5,7 +5,7 @@ import ProjectsContainer from "@/components/ProjectsContainer";
 
 export default function Projects() {
   return (
-    <div className="pad min-h-[550px] flex flex-col items-start justify-between gap-8">
+    <div className="pad min-h-[550px] md:mt-4 bg-white dark:bg-dark flex flex-col items-start justify-between gap-8">
       <Heading
         className={`heading`}
         content={

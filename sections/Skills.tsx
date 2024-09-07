@@ -52,7 +52,7 @@ export default async function Skills() {
   };
 
   return (
-    <div className="pad min-h-[550px] flex flex-col gap-4 sm:mt-4">
+    <div className="pad min-h-[550px] flex flex-col gap-4 md:mt-8">
       <Heading
         className={`heading`}
         content={

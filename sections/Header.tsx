@@ -4,8 +4,8 @@ import potatoImage from "@/app/icon.png";
 
 export default function Header() {
   return (
-    <div className="pad min-h-[550px] flex flex-row md:flex-col items-center">
-      <div className="w-[70%] md:w-full h-[400px] flex flex-col items-start justify-around">
+    <div className="pad h-[600px] md:h-[fit-content] flex flex-row md:flex-col items-center">
+      <div className="w-[70%] md:w-full h-[400px]  flex flex-col items-start justify-around">
         <div>
           <h1 className="text-size-1">Abdurrahman</h1>
           <h2 className="text-size-2">
@@ -18,9 +18,6 @@ export default function Header() {
         <Link className="btn" href={"/about"}>
           show more
         </Link>
-      </div>
-      <div className="w-[30%] md:w-full h-[400px] rounded-full flex items-center justify-center">
-        <Image src={potatoImage} alt="potato image" width={400} height={400} />
       </div>
     </div>
   );

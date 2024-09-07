@@ -8,7 +8,7 @@ import {} from "next/font/local";
 export default function Providers({ children }) {
   return (
     <ThemeProvider defaultTheme="system" attribute="class">
-      <div className="text-dark dark:text-white dark:bg-dark transition-colors duration-300">
+      <div className="text-dark dark:text-white bg-[url('../img/light-bg.jpg')] dark:bg-[url('../img/dark-bg.jpg')] transition-all bg-cover bg-no-repeat bg-fixed">
         {children}
       </div>
     </ThemeProvider>
