@@ -18,7 +18,7 @@ const ToUp = () => {
   };
 
   return (
-    <div
+    <button
       className={
         "scrollTop px-6 text-dark font-bold bg-lightAccent dark:bg-darkAccent hover:bg-darkAccent dark:hover:bg-lightAccent  " +
         clas
@@ -26,7 +26,7 @@ const ToUp = () => {
       onClick={scrlTop}
     >
       <BiUpArrowAlt className="text-[20px] text-black fixed" />
-    </div>
+    </button>
   );
 };
 

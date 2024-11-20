@@ -1,7 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-
 import { BiMoon, BiSun } from "react-icons/bi";
 
 export default function ThemeSwitch() {
@@ -11,7 +10,7 @@ export default function ThemeSwitch() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div className="flex justify-center items-center">
+    <button className="flex justify-center items-center">
       {mounted &&
         (currentTheme === "dark" ? (
           <BiSun
@@ -24,6 +23,6 @@ export default function ThemeSwitch() {
             onClick={() => setTheme("dark")}
           />
         ))}
-    </div>
+    </button>
   );
 }

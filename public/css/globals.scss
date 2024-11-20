@@ -153,7 +153,7 @@ ul {
 }
 
 .btn {
-  @apply p-2 md:px-2 md:py-1 text-white dark:text-dark capitalize bg-lightAccent dark:bg-darkAccent rounded-[5px] hover:bg-darkAccent dark:hover:bg-lightAccent transition-colors;
+  @apply p-2 md:px-2 md:py-1 text-white dark:text-dark capitalize font-medium bg-lightAccent dark:bg-darkAccent rounded-[5px] hover:bg-darkAccent dark:hover:bg-lightAccent transition-colors;
 }
 
 .text-size-1 {

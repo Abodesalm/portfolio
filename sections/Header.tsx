@@ -15,8 +15,8 @@ export default function Header() {
             <br />
           </h2>
         </div>
-        <Link className="btn" href={"/about"}>
-          show more
+        <Link className="btn" target="_blank" href={"/cv.pdf"}>
+          download CV
         </Link>
       </div>
     </div>

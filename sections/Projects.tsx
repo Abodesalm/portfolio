@@ -1,6 +1,5 @@
 import Heading from "@/components/Heading";
 import Link from "next/link";
-import Card from "@/components/Card";
 import ProjectsContainer from "@/components/ProjectsContainer";
 
 export default function Projects() {

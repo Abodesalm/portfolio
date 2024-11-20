@@ -2,8 +2,8 @@ import { api } from "@/public/data";
 import Card from "./Card";
 
 export default async function ProjectsContainer({ slicing }) {
-  const projects = await fetch(`${api}/projects`, {
-    cache: "no-store",
+  const projects = await fetch(`${api}/projects/web`, {
+    cache: "force-cache",
   }).then((projects) => projects.json());
   return (
     <div className="w-full flex flex-row flex-wrap gap-8 items-start justify-evenly">

@@ -2,6 +2,7 @@ import ThemeSwitch from "@/components/ThemeSwitch";
 import Link from "next/link";
 import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
+import { GrProjects } from "react-icons/gr";
 
 export default function Navbar() {
   return (
@@ -14,6 +15,13 @@ export default function Navbar() {
         </Link>
         <Link href="/" className="md:flex hidden">
           <AiFillHome className="text-[22px]" />
+        </Link>
+
+        <Link href="/projects" className="md:hidden flex font-semibold">
+          Projects
+        </Link>
+        <Link href="/projects" className="md:flex hidden">
+          <GrProjects className="text-[19px]" />
         </Link>
 
         <Link href="/about" className="md:hidden flex font-semibold">

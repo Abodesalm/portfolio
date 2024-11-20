@@ -18,11 +18,15 @@ export default function Card({
       <div className="px-3 py-2 flex flex-col items-start justify-between gap-4">
         <div>
           <h5 className="text-size-4 capitalize">{title}</h5>
-          <p className="text-size-5">{summary}</p>
+          <p className="text-size-5 first-letter:capitalize">{summary}</p>
         </div>
         <ul className="px-6 text-size-6">
           {features.map((el) => {
-            return <li key={el}>{el}</li>;
+            return (
+              <li key={el} className="first-letter:capitalize">
+                {el}
+              </li>
+            );
           })}
         </ul>
         <div className="w-full flex flex-row items-center justify-around">
